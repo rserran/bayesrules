@@ -175,15 +175,15 @@ the model's posterior classification quality.</p>
 <span class='r-in'><span class='va'>example_model</span> <span class='op'>&lt;-</span> <span class='fu'>e1071</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/e1071/man/naiveBayes.html'>naiveBayes</a></span><span class='op'>(</span><span class='va'>species</span> <span class='op'>~</span> <span class='va'>bill_length_mm</span>, data <span class='op'>=</span> <span class='va'>penguins_bayes</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'>naive_classification_summary_cv</span><span class='op'>(</span>model <span class='op'>=</span> <span class='va'>example_model</span>, data <span class='op'>=</span> <span class='va'>penguins_bayes</span>, y <span class='op'>=</span> <span class='st'>"species"</span>, k <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $folds</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>   fold Adelie  Chinstrap    Gentoo overall_accuracy</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> 1    1 0.9125 0.06060606 0.9491525        0.7616279</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> 2    2 1.0000 0.14285714 0.8307692        0.7616279</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>   fold    Adelie Chinstrap    Gentoo overall_accuracy</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 1    1 0.9189189 0.0000000 0.9531250             0.75</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 2    2 0.9871795 0.1470588 0.7833333             0.75</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $cv</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>    species       Adelie  Chinstrap       Gentoo</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>     Adelie 95.39% (145)  0.00% (0)  4.61%   (7)</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>  Chinstrap  7.35%   (5) 10.29% (7) 82.35%  (56)</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>     Gentoo  6.45%   (8)  4.84% (6) 88.71% (110)</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>    species       Adelie Chinstrap       Gentoo</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>     Adelie 95.39% (145) 0.00% (0)  4.61%   (7)</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>  Chinstrap  5.88%   (4) 7.35% (5) 86.76%  (59)</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>     Gentoo  8.87%  (11) 4.03% (5) 87.10% (108)</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
 </code></pre></div>
   </div>
